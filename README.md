@@ -142,5 +142,5 @@ my-project/
 
 ---
 
-Перейдем к первому нашему шагу
+[Перейдем к первому нашему шагу](https://github.com/mrSKETH/web-dev-basics/tree/teor)
 ---
