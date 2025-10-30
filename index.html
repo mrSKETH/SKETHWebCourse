@@ -35,7 +35,6 @@
             padding: 20px;
         }
 
-        /* Header Styles */
         header {
             background: linear-gradient(135deg, var(--primary), var(--secondary));
             color: white;
@@ -77,7 +76,6 @@
             z-index: 1;
         }
 
-        /* Navigation */
         nav {
             background-color: white;
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
@@ -113,7 +111,6 @@
             color: var(--primary);
         }
 
-        /* Hero Section */
         .hero {
             padding: 80px 0;
             text-align: center;
@@ -132,7 +129,6 @@
             color: var(--gray);
         }
 
-        /* Courses Section */
         .courses {
             padding: 60px 0;
             background-color: white;
@@ -206,7 +202,6 @@
             background-color: var(--secondary);
         }
 
-        /* Lessons Section */
         .lessons {
             padding: 60px 0;
         }
@@ -288,7 +283,6 @@
             margin-bottom: 15px;
         }
 
-        /* Footer */
         footer {
             background: linear-gradient(135deg, var(--secondary), #1a1a2e);
             color: white;
@@ -367,7 +361,6 @@
             font-weight: bold;
         }
 
-        /* Responsive */
         @media (max-width: 768px) {
             .nav-container {
                 flex-direction: column;
@@ -392,18 +385,10 @@
     </style>
 </head>
 <body>
-    <!-- Header -->
-    <header>
-        <div class="container">
-            <div class="logo">SKETHWeb<span>Course</span></div>
-            <p class="tagline">Мини гайд по: HTML, CSS и JavaScript. С практическими примерами и лекциями</p>
-        </div>
-    </header>
 
-    <!-- Navigation -->
     <nav>
         <div class="container nav-container">
-            <div class="logo">SKETHWeb<span>Course</span></div>
+            <div class="logo">SKETWeb<span>Course</span></div>
             <ul class="nav-links">
                 <li><a href="#courses">Курсы</a></li>
                 <li><a href="#lessons">Все Уроки</a></li>
@@ -412,15 +397,14 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="hero">
+    <header>
         <div class="container">
-            <h1>Стань фрондент разработчиком с нуля</h1>
-            <p>Практический курс по созданию современных веб-сайтов. Изучите HTML, CSS и JavaScript через реальные проекты.</p>
+            <div class="logo">Стань фрондент разработчиком<span> с нуля</span></div>
+            <p class="tagline">Практический курс по созданию современных веб-сайтов. Изучите HTML, CSS и JavaScript через реальные проекты.</p>
         </div>
-    </section>
+    </header>
 
-    <!-- Courses Section -->
+
     <section class="courses" id="courses">
         <div class="container">
             <h2 class="section-title">Наши курсы</h2>
@@ -459,10 +443,9 @@
         </div>
     </section>
 
-    <!-- Lessons Section -->
     <section class="lessons" id="lessons">
         <div class="container">
-            <h2 class="section-title">Популярные уроки</h2>
+            <h2 class="section-title">Все практические занятия</h2>
             <div class="lesson-tabs">
                 <button class="tab-btn active" data-category="all">Все уроки</button>
                 <button class="tab-btn" data-category="html">HTML</button>
@@ -482,12 +465,12 @@
                 </div>
                 <div class="lesson-card" data-category="html">
                     <div class="lesson-header">
-                        <h3>Работа с формами</h3>
+                        <h3>Практические применения HTML</h3>
                         <div class="lesson-number">2</div>
                     </div>
                     <div class="lesson-body">
-                        <p>Создавайте интерактивные формы для сбора данных пользователей.</p>
-                        <a href="lesson-html-2.html" class="btn">Изучить</a>
+                        <p>Показаны все популярные примеры использования HTML в связке CSS и JS</p>
+                        <a href="examples.html" class="btn">Изучить</a>
                     </div>
                 </div>
                 <div class="lesson-card" data-category="css">
@@ -522,11 +505,11 @@
                 </div>
                 <div class="lesson-card" data-category="js">
                     <div class="lesson-header">
-                        <h3>Практические примеры JS</h3>
+                        <h3>Интерактивная Модель</h3>
                         <div class="lesson-number">6</div>
                     </div>
                     <div class="lesson-body">
-                        <p>Научитесь создавать скрипты на JS с нуля и правильно их испольховать</p>
+                        <p>Вы можете попытаться создать примеры через наш интерактивный код который вы будете писать сами прямо в браузере</p>
                         <a href="lesson-js-2.html" class="btn">Изучить</a>
                     </div>
                 </div>
@@ -534,13 +517,12 @@
         </div>
     </section>
 
-    <!-- Footer -->
     <footer id="about">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-column">
                     <h3>О проекте</h3>
-                    <p>SKETHWebCourse - это образовательная платформа для изучения веб-разработки с нуля. Мы предлагаем лекционные и практические уроки с примерамт ппоектов для закрепления знаний.</p>
+                    <p>SKETHWebCourse - это образовательная платформа для изучения веб-разработки с нуля. Мы предлагаем лекционные и практические уроки с примерами проектов для закрепления знаний.</p>
                 </div>
             </div>
             <div class="support">
@@ -553,21 +535,17 @@
     </footer>
 
     <script>
-        // Tab functionality for lessons
         document.addEventListener('DOMContentLoaded', function() {
             const tabBtns = document.querySelectorAll('.tab-btn');
             const lessonCards = document.querySelectorAll('.lesson-card');
             
             tabBtns.forEach(btn => {
                 btn.addEventListener('click', function() {
-                    // Remove active class from all buttons
                     tabBtns.forEach(b => b.classList.remove('active'));
-                    // Add active class to clicked button
                     this.classList.add('active');
                     
                     const category = this.getAttribute('data-category');
                     
-                    // Show/hide lesson cards based on category
                     lessonCards.forEach(card => {
                         if (category === 'all' || card.getAttribute('data-category') === category) {
                             card.style.display = 'block';
