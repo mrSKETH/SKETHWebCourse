@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Полная лекция по HTML | SKETHWeb Course</title>
+    <title>Лекция по HTML</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/atom-one-dark.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
@@ -38,7 +38,6 @@
             padding: 20px;
         }
 
-        /* Header Styles */
         header {
             background: linear-gradient(135deg, var(--primary), var(--secondary));
             color: white;
@@ -87,7 +86,6 @@
             opacity: 0.9;
         }
 
-        /* Navigation */
         nav {
             background-color: white;
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
@@ -140,7 +138,6 @@
             background-color: var(--secondary);
         }
 
-        /* Content */
         .content {
             display: flex;
             gap: 30px;
@@ -295,7 +292,6 @@
             margin-bottom: 10px;
         }
 
-        /* Footer */
         footer {
             background: linear-gradient(135deg, var(--secondary), #1a1a2e);
             color: white;
@@ -374,7 +370,6 @@
             font-weight: bold;
         }
 
-        /* Responsive */
         @media (max-width: 768px) {
             .nav-container {
                 flex-direction: column;
@@ -400,7 +395,6 @@
     </style>
 </head>
 <body>
-    <!-- Header -->
     <header>
         <div class="container">
             <div class="header-content">
@@ -411,15 +405,9 @@
         </div>
     </header>
 
-    <!-- Navigation -->
     <nav>
         <div class="container nav-container">
             <div class="logo">SKETHWeb<span>Course</span></div>
-            <ul class="nav-links">
-                <li><a href="index.html">Главная</a></li>
-                <li><a href="html-course.html">Курс HTML</a></li>
-                <li><a href="css-course.html">Курс CSS</a></li>
-                <li><a href="js-course.html">Курс JavaScript</a></li>
             </ul>
             <a href="index.html" class="back-btn">
                 <i class="fas fa-arrow-left"></i> На главную
@@ -427,7 +415,6 @@
         </div>
     </nav>
 
-    <!-- Content -->
     <div class="container content">
         <!-- Sidebar -->
         <aside class="sidebar">
@@ -442,13 +429,12 @@
                 <li><a href="#tables">Таблицы</a></li>
                 <li><a href="#forms">Формы</a></li>
                 <li><a href="#semantic">Семантические элементы</a></li>
+                <li><a href="#file">Файлы и их подключение</a></li>
                 <li><a href="#conclusion">Заключение</a></li>
             </ul>
         </aside>
 
-        <!-- Main Content -->
         <main class="main-content">
-            <!-- Introduction -->
             <section id="intro" class="section">
                 <h2>Введение в HTML</h2>
                 <p>HTML (HyperText Markup Language) - это стандартный язык разметки для создания веб-страниц. Он определяет структуру и содержание веб-страницы с помощью различных элементов и тегов.</p>
@@ -456,8 +442,34 @@
                 <div class="note">
                     <h4>Важно!</h4>
                     <p>HTML не является языком программирования. Это язык разметки, который сообщает браузеру, как отображать контент.</p>
+                    <p>По этой причине вам не стоит говорить что вы "програмист" если изучили лишь HTML</p>
                 </div>
-                
+                <ul>
+                    <p>За счет HTML вы сможете указать какие объекты должны быть на странице: кнопки, текст, формы и так далее. HTML лишь позволит расставить все объекты и по началу они будут выглядеть не особо красиво. </p>
+                    <p>Тут вступает в силу CSS. Он даст вам возможность указать стили для любого HTML объекта. При помощи CSS и HTML вы уже сможете делать красивую разметку веб-сайтов. Ваши сайты будут ничем не хуже, чем полноценные веб проекты, что вы видите ежедневно на тысячах сайтов.</p>
+                    <p>В то же время, HTML и CSS, ни дает никакой функциональности. У вас будет сайт, он будет красивый, но без функций. По этой причине вам стоит ещё обязательно изучить JavaScript. Он позволит создавать пользовательские функции, что выполняются в браузере и для их выполнения не требуется перезагрузка страницы.</p>
+                </ul>
+
+
+                <h3>Создание html файлов</h3>
+                <ul>
+                    <p>При создании HTML файла обязательно указывать расширение файла, как: .html. Создав файл с таким расширением вы сможете открыть его через любой веб браузер. Некоторые разработчики указывают расширение .htm, что тоже является верным.</p>
+                    <p>Главная страница обычно всегда обозначается как index.html или index.htm</p>
+                    <p>Чтобы открыть HTML файл в браузере достаточно два раза нажать на него. После этого файл будет открыт в вашем браузере по умолчанию. Весь код из HTML файла будет обработан и показан на странице в браузере</p>
+                </ul>
+
+                <h3>Front-end и Back-end</h3>
+                <ul>
+                    <p>При создании веб-сайта всегда есть две стороны: Front-end и Back-end.</p>
+                    <li>Front-end – это понятие, что описывает разработку внешнего вида сайта.</li>
+                    <li>Back-end – это второе понятие, что описывает разработку серверной части сайта.</li>
+                </ul>
+
+                        <div class="note">
+                    <h4>Важно!</h4>
+                    <p>В данном курсе мы будет рамастривать именно Front-end разработку</p>
+                        </div>
+
                 <h3>Основные понятия</h3>
                 <ul>
                     <li><strong>Тег (Tag)</strong> - основной строительный блок HTML, заключенный в угловые скобки (< >)</li>
@@ -466,7 +478,6 @@
                 </ul>
             </section>
 
-            <!-- Document Structure -->
             <section id="structure" class="section">
                 <h2>Структура HTML-документа</h2>
                 <p>Каждая HTML-страница имеет базовую структуру, которая включает следующие элементы:</p>
@@ -507,6 +518,10 @@
                             <td>Содержит метаинформацию о документе</td>
                         </tr>
                         <tr>
+                            <td><span class="tag">&lt;!----&gt;</span></td>
+                            <td>Комментарий который будет виден лишь в коде но не конечному пользователю</td>
+                        </tr>
+                        <tr>
                             <td><span class="tag">&lt;meta&gt;</span></td>
                             <td>Определяет метаданные (кодировка, viewport)</td>
                         </tr>
@@ -522,22 +537,24 @@
                 </table>
             </section>
 
-            <!-- Text Elements -->
             <section id="text" class="section">
                 <h2>Текстовые элементы</h2>
                 <p>HTML предоставляет различные элементы для форматирования текста:</p>
                 
                 <h3>Заголовки</h3>
-                <p>Заголовки определяются тегами <span class="tag">&lt;h1&gt;</span> - <span class="tag">&lt;h6&gt;</span>, где <span class="tag">&lt;h1&gt;</span> - самый важный заголовок.</p>
+                <p>Заголовки определяются тегами <span class="tag">&lt;h1&gt;</span> до <span class="tag">&lt;h6&gt;</span>, где <span class="tag">&lt;h1&gt;</span> - самый важный заголовок.</p>
                 
                 <div class="example">
                     <h4>Пример заголовков:</h4>
                     <h1>Заголовок 1 уровня</h1>
                     <h2>Заголовок 2 уровня</h2>
                     <h3>Заголовок 3 уровня</h3>
+                    <h4>Заголовок 4 уровня</h4>
+                    <h5>Заголовок 5 уровня</h5>
+                    <h6>Заголовок 6 уровня</h6>
                 </div>
                 
-                <h3>Параграфы и форматирование</h3>
+                <h3>Тег абзаца и форматирование</h3>
                 <div class="code-block">
                     <pre><code class="language-html">&lt;p&gt;Это обычный параграф текста.&lt;/p&gt;
 &lt;p&gt;Это &lt;strong&gt;важный&lt;/strong&gt; текст.&lt;/p&gt;
@@ -547,9 +564,49 @@
 &lt;p&gt;Это &lt;del&gt;удаленный&lt;/del&gt; текст.&lt;/p&gt;
 &lt;p&gt;Это &lt;ins&gt;вставленный&lt;/ins&gt; текст.&lt;/p&gt;</code></pre>
                 </div>
+
+
+                <h3>Объяснение структуры</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Элемент</th>
+                            <th>Назначение</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><span class="tag">&lt;p&gt;&lt;/p&gt;</span></td>
+                            <td>Простой абзац</td>
+                        </tr>
+                        <tr>
+                            <td><span class="tag">&lt;strong&gt;&lt;/strong&gt;</span></td>
+                            <td><strong>Добавляет обёрнутому в него слову или фразе очень высокую важность</strong></td>
+                        </tr>
+                        <tr>
+                            <td><span class="tag">&lt;em&gt;&lt;/em&gt;</span></td>
+                            <td><em>По умолчанию выделяется курсивом</em></td>
+                        </tr>
+                        <tr>
+                            <td><span class="tag">&lt;mark&gt;&lt;/mark&gt;</span></td>
+                            <td><mark>Выделяет или подсвечивает важный фрагмент текста</mark></td>
+                        </tr>
+                        <tr>
+                            <td><span class="tag">&lt;small&gt;&lt;/small&gt;</span></td>
+                            <td><small>Используется для вывода текста мелким шрифтом</small></td>
+                        </tr>
+                        <tr>
+                            <td><span class="tag">&lt;del&gt;&lt;/del&gt;</span></td>
+                            <td><del>Используется для отображения удалённого контента</del></td>
+                        </tr>
+                        <tr>
+                            <td><span class="tag">&lt;ins&gt;&lt;/ins&gt;</span></td>
+                            <td><ins>Используется для отображения добавленного контента</ins></td>
+                        </tr>
+                    </tbody>
+                </table>
             </section>
 
-            <!-- Lists -->
             <section id="lists" class="section">
                 <h2>Списки</h2>
                 <p>HTML поддерживает три типа списков:</p>
@@ -562,7 +619,13 @@
     &lt;li&gt;Третий пункт&lt;/li&gt;
 &lt;/ol&gt;</code></pre>
                 </div>
-                
+                <ol>
+                    <li>Первый пункт</li>
+                    <li>Второй пункт</li>
+                    <li>Третий пункт</li>
+                </ol>
+
+
                 <h3>Маркированный список</h3>
                 <div class="code-block">
                     <pre><code class="language-html">&lt;ul&gt;
@@ -572,6 +635,12 @@
 &lt;/ul&gt;</code></pre>
                 </div>
                 
+                <ul>
+                    <li>Пункт списка</li>
+                    <li>Еще один пункт</li>
+                    <li>И еще один</li>
+                </ul>
+
                 <h3>Список определений</h3>
                 <div class="code-block">
                     <pre><code class="language-html">&lt;dl&gt;
@@ -583,7 +652,13 @@
                 </div>
             </section>
 
-            <!-- Links -->
+                <dl>
+                    <dt>HTML</dt>
+                    <dd>Язык разметки гипертекста</dd>
+                    <dt>CSS</dt>
+                    <dd>Каскадные таблицы стилей</dd>
+                </dl>
+
             <section id="links" class="section">
                 <h2>Ссылки</h2>
                 <p>Ссылки создаются с помощью тега <span class="tag">&lt;a&gt;</span> и атрибута <span class="tag">href</span>.</p>
@@ -631,7 +706,6 @@
                 </table>
             </section>
 
-            <!-- Images -->
             <section id="images" class="section">
                 <h2>Изображения</h2>
                 <p>Для вставки изображений используется тег <span class="tag">&lt;img&gt;</span>.</p>
@@ -674,7 +748,6 @@
                 </div>
             </section>
 
-            <!-- Tables -->
             <section id="tables" class="section">
                 <h2>Таблицы</h2>
                 <p>Таблицы создаются с помощью тега <span class="tag">&lt;table&gt;</span> и содержат строки (<span class="tag">&lt;tr&gt;</span>), ячейки (<span class="tag">&lt;td&gt;</span>) и заголовки (<span class="tag">&lt;th&gt;</span>).</p>
@@ -697,6 +770,22 @@
 &lt;/table&gt;</code></pre>
                 </div>
                 
+                <table>
+                    <caption>Заголовок таблицы</caption>
+                    <thead>
+                        <tr>
+                            <th>Заголовок 1</th>
+                            <th>Заголовок 2</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Данные 1</td>
+                            <td>Данные 2</td>
+                        </tr>
+                    </tbody>
+                </table>
+
                 <h3>Элементы таблицы</h3>
                 <table>
                     <thead>
@@ -742,7 +831,6 @@
                 </table>
             </section>
 
-            <!-- Forms -->
             <section id="forms" class="section">
                 <h2>Формы</h2>
                 <p>Формы используются для сбора данных от пользователей. Основной элемент - <span class="tag">&lt;form&gt;</span>.</p>
@@ -803,7 +891,6 @@
                 </table>
             </section>
 
-            <!-- Semantic Elements -->
             <section id="semantic" class="section">
                 <h2>Семантические элементы HTML5</h2>
                 <p>Семантические элементы четко описывают свое значение как для браузера, так и для разработчика.</p>
@@ -874,29 +961,64 @@
                 </div>
             </section>
 
-            <!-- Conclusion -->
+            <section id="File" class="section">
+                <h2>Файловые эмелементы</h2>
+                <p>В HTML есть два тега, что позволяют выполнить подключение CSS и JavaScript файлов.</p>
+                
+                <div class="code-block">
+                    <pre><code class="language-html">&lt;header&gt;
+    &lt;link href="style.css" rel=stylesheet type="text/css"&gt;
+    &lt;script src="external.js"&gt;&lt;/script&gt;</code></pre>
+                </div>
+                
+                <h3>Атрибуты файлов</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Элемент</th>
+                            <th>Назначение</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><span class="tag">&lt;link&gt;</span></td>
+                            <td>Определяет отношения между текущим документом и внешним ресурсом
+                        </td>
+                        <tr>
+                            <td><span class="tag">&lt;herf&gt;</span></td>
+                            <td>Указывает ссылку или путь к подключаемому файлу</td>
+                        </tr>
+                        <tr>
+                            <td><span class="tag">&lt;rel&gt;</span></td>
+                            <td>Описывает как связаны текущая страница и подключаемый ресурс</td>
+                        </tr>
+                        <tr>
+                            <td><span class="tag">&lt;type&gt;</span></td>
+                            <td>Содержит тип связанного ресурса</td>
+                        </tr>
+                    <tr>
+                        <th>Элемент</th>
+                        <th>Назначение</th>
+                    </tr>
+                        <tr>
+                            <td><span class="tag">&lt;script&gt;</span></td>
+                            <td>Элемент кода, который позволяет совершать действия, включать анимацию и создавать другие эффекты на странице испульзуя JavaScript</td>
+                        </tr>
+                            <tr>
+                            <td><span class="tag">&lt;src&gt;</span></td>
+                            <td>Указывает путь к файлу</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
             <section id="conclusion" class="section">
                 <h2>Заключение</h2>
-                <p>HTML - это фундаментальная технология веб-разработки. Понимание и правильное использование HTML-элементов является ключевым навыком для любого веб-разработчика.</p>
-                
-                <h3>Лучшие практики HTML</h3>
-                <ul>
-                    <li>Всегда используйте правильную структуру документа</li>
-                    <li>Применяйте семантические элементы там, где это уместно</li>
-                    <li>Обеспечивайте доступность с помощью соответствующих атрибутов</li>
-                    <li>Пишите валидный код и проверяйте его с помощью валидатора W3C</li>
-                    <li>Используйте комментарии для пояснения сложных участков кода</li>
-                </ul>
-                
-                <div class="example">
-                    <h4>Следующий шаг</h4>
-                    <p>После освоения HTML переходите к изучению CSS для стилизации ваших веб-страниц и JavaScript для добавления интерактивности.</p>
-                </div>
+                <p>Теперь вы знаете язык разметки HTML и далее вам необходимо изучить язык стилей CSS. После изучения CSS ваши сайты преобразятся как никогда ранее и вы сможете уже создавать отличные современные веб сайты с любым дизайном.</p>
             </section>
         </main>
     </div>
 
-    <!-- Footer -->
     <footer id="about">
         <div class="container">
             <div class="footer-content">
@@ -915,7 +1037,6 @@
     </footer>
 
     <script>
-        // Smooth scrolling for anchor links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
@@ -930,7 +1051,6 @@
                         behavior: 'smooth'
                     });
                     
-                    // Update active link in sidebar
                     document.querySelectorAll('.sidebar a').forEach(link => {
                         link.classList.remove('active');
                     });
@@ -939,7 +1059,6 @@
             });
         });
         
-        // Update active link on scroll
         window.addEventListener('scroll', function() {
             const sections = document.querySelectorAll('.section');
             const navLinks = document.querySelectorAll('.sidebar a');
